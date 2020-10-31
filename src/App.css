@@ -1,0 +1,439 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* My Code */
+
+@font-face {
+  src: url(./fonts/Prompt-Medium.ttf);
+  font-family: Prompt-Medium;
+}
+
+* {
+  font-family: Prompt-Medium;
+}
+
+/* UserLogin */
+
+.user-login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-login-side-banner {
+  background-image: url(./image/side-banner-bg.png);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: #33abda;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  width: 40%;
+  height: 100vh;
+}
+
+.user-login-side-banner img:nth-child(1) {
+  height: 80px;
+  width: 60%;
+}
+
+.user-login-side-banner img:nth-child(2) {
+  opacity: 0.8;
+  height: 200px;
+  width: 80%;
+}
+
+.user-login-side-banner p {
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.user-login .user-login-login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(240, 245, 251, 0.6);
+  width: 60%;
+  height: 100vh;
+}
+
+.user-login-login-form .main-login-form {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.user-login-login-form .main-login-form h4 {
+  color: #0e0e0e;
+  font-size: 28px;
+  letter-spacing: 1px;
+  padding: 15px 0;
+}
+
+.main-login-form form {
+  width: 330px;
+}
+
+.main-login-form form p:nth-child(1) {
+  color: #333;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.main-login-form form .login-form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-input select {
+  border: 1px solid #777;
+  border-radius: 3px;
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 70px;
+  padding-left: 5px;
+}
+
+.login-form-input input {
+  margin-left: 10px;
+  border: 1px solid #777;
+  border-radius: 3px;
+  height: 38px;
+  width: 250px;
+  padding: 0 10px;
+}
+
+.main-login-form form .login-form-check {
+  width: 330px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.login-form-check input {
+  margin: 0;
+}
+
+.login-form-check p {
+  margin-left: 5px;
+  color: #777;
+  font-size: 12px;
+}
+
+.main-login-form form button {
+  cursor: pointer;
+  outline: none;
+  height: 40px;
+  width: 330px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #33abda;
+  color: #f2f2f2;
+  font-size: 16px;
+}
+
+.main-login-form form button:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-login-form form #or-text {
+  margin-top: 15px;
+  color: #6f6f6f;
+  font-size: 20px;
+  text-align: center;
+}
+
+.main-login-form .login-form-fb-login {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 330px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #395185;
+}
+
+.main-login-form .login-form-fb-login:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.main-login-form .login-form-fb-login img {
+  height: 30px;
+  width: 20px;
+}
+
+.main-login-form .login-form-fb-login p {
+  font-size: 16px;
+  color: #f2f2f2;
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .user-login .user-login-side-banner {
+    width: 40%;
+  }
+
+  .user-login .user-login-login-form {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main-login-form form button {
+    cursor: none;
+  }
+
+  .main-login-form .login-form-fb-login {
+    cursor: none;
+  }
+
+  .user-login .user-login-side-banner {
+    background-image: none;
+  }
+
+  .user-login {
+    flex-direction: column;
+  }
+
+  .user-login .user-login-side-banner {
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 100px;
+  }
+
+  .user-login .user-login-login-form {
+    width: 100%;
+  }
+
+  .user-login-side-banner img:nth-child(1) {
+    width: 150px;
+  }
+
+  .user-login-side-banner img:nth-child(2) {
+    display: none;
+  }
+
+  .user-login-side-banner p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main-login-form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-login-form form {
+    width: 100%;
+  }
+
+  .login-form-input input {
+    width: 100%;
+  }
+
+  .main-login-form form .login-form-check {
+    width: 100%;
+  }
+
+  .main-login-form form button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .main-login-form .login-form-fb-login {
+    width: 100%;
+  }
+
+  .main-login-form .login-form-fb-login p {
+    font-size: 14px;
+  }
+}
